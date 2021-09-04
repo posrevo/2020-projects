@@ -1,0 +1,53 @@
+{{ define "layout" }}
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shorthandcss@1.1.1/dist/shorthand.min.css"/>
+    <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"/>
+    <title>포스레보 아이두</title>
+    <style>
+        html, body {
+            font-family: 'Spoqa Han Sans';
+            width: 100%;
+        }
+
+        .hero {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 600px;
+            text-align: center;
+            color: white;
+            margin-top: calc(50% - 28em);
+        }
+
+        .text {
+            font-size: 2em;
+        }
+
+        .time {
+            margin-top: 0px;
+            font-size: 8em;
+            font-weight: 700;
+        }
+        
+    </style>
+</head>
+<body class="indigo-red">
+<div class="hero">
+    <p class="text">오늘의 시간</p>
+    <p class="time">{{.Hours}}:{{.Minutes}}:{{.Seconds}}</p>
+    <p class="text">G-POSREVO 아이두</p>
+    <p>1일 전: 03:35:01</p>
+    <p>2일 전: 00:12:52</p>
+    <p>3일 전: 02:00:29</p>
+    <p>4일 전: 01:39:00</p>
+    <p>5일 전: 03:33:15</p>
+</div>
+</body>
+</html>
+
+{{ end }}
